@@ -1,0 +1,23 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--navbar-width);
+  padding: 20px;
+  transition: margin-left 0.2s;
+}
+
+/* When navbar is collapsed */
+#nav-toggle:checked ~ .main-content {
+  margin-left: var(--navbar-width-min);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding-left: calc(var(--navbar-width-min) + 20px);
+  }
+}

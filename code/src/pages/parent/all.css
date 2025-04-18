@@ -1,0 +1,128 @@
+/* Add these styles to your admin.css file */
+
+/* Child-specific styling */
+.child-avatar {
+    background: linear-gradient(135deg, #4a6cf7, #3b82f6);
+  }
+  
+  .large.child-avatar {
+    width: 64px;
+    height: 64px;
+    font-size: 1.5rem;
+  }
+  
+  .grade-badge,
+  .gender-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  /* Child Detail Modal */
+  .child-detail-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .child-detail-header h3 {
+    margin: 0.75rem 0 0 0;
+    color: #333;
+    font-size: 1.25rem;
+  }
+  
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-item {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  
+  .detail-label {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-label i {
+    margin-right: 0.5rem;
+  }
+  
+  .detail-value {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Error display */
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .error-icon {
+    font-size: 2.5rem;
+    color: #ef4444;
+    margin-bottom: 1rem;
+  }
+  
+  .error-container h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+  }
+  
+  .error-container p {
+    color: #6c757d;
+  }
+  
+  /* Action button for reports */
+  .icon-button.reports {
+    background-color: #f0f9ff;
+    color: #0ea5e9;
+  }
+  
+  .icon-button.reports:hover {
+    background-color: #0ea5e9;
+    color: white;
+  }
+  
+  /* Empty state specific to children page */
+  .data-card .empty-state {
+    padding: 3rem;
+  }
+  
+  .data-card .empty-state i {
+    font-size: 3rem;
+    color: #4a6cf7;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+  
+  .data-card .empty-state p {
+    font-size: 1rem;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
